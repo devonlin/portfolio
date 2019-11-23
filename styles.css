@@ -29,6 +29,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
     align-items: center;
     min-height: 100vh;
     background: rgba(70, 70, 70, 0.9);
@@ -44,16 +45,19 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* border: 1px solid black; */
 }
 
 
 h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: rgba(255, 255, 255, .5);
     text-transform: uppercase;
     text-align: center;
     display: flex;
     font-style: italic;
+    /* border: 1px solid black; */
+
 }
 
 h2 span {
@@ -110,6 +114,13 @@ h2 span:nth-child(10n+10) {
     transition-delay: 0.9s;
 }
 
+.loader,
+.social,
+.navbar {
+    /* border: 1px solid black; */
+
+}
+
 .l {
     /* font-family: arial; */
     /* color: rgba(255, 255, 255, .3); */
@@ -128,7 +139,7 @@ h2 span:nth-child(10n+10) {
 
     25% {
         color: rgba(255, 255, 255, .5);
-        transform: translateY(-15px);
+        transform: translateY(-0.9rem);
         margin-left: 10px;
         text-shadow: 0 1rem 0.3rem rgba(0, 0, 0, 1);
     }
@@ -197,6 +208,12 @@ h2 span:nth-child(10n+10) {
 .right {
     position: relative;
     padding: 3rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
 }
 
 .navbar li {
@@ -210,7 +227,7 @@ h2 span:nth-child(10n+10) {
     /* text-align: center; */
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: rgba(255, 255, 255, .5);
 }
@@ -243,7 +260,7 @@ h2 span:nth-child(10n+10) {
     }
 
     100% {
-        background-position: 200px;
+        background-position: 12.5rem;
     }
 }
 
@@ -292,10 +309,37 @@ h2 span:nth-child(10n+10) {
 
 .social ul li a:hover:before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #77ff28;
+    box-shadow: 0 0 0.9rem #77ff28;
 }
 
 .social ul li a:hover {
     color: #77ff28;
-    box-shadow: 0 0 5px #77ff28;
-    text-shadow: 0 0 5px #77ff28;
+    box-shadow: 0 0 0.9rem #77ff28;
+    text-shadow: 0 0 0.9rem #77ff28;
+}
+
+#menu-overlay {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    .left {
+        height: 70vh;
+    }
+
+    .right {
+        height: 30vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}

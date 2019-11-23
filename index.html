@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <div class="left">
+            <div id="toggleIcon" onclick='menuToggle()'></div>
             <h2>
                 <span>K</span>
                 <span>e</span>
@@ -42,7 +43,7 @@
             </div>
         </div>
         <div class='right'>
-            <div class="navbar">
+            <div class="navbar" id='menu-overlay'>
                 <ul>
                     <li> <a href='#' data-text='Home'>Home</a></li>
                     <li> <a href='#bio' data-text='About'>About</a></li>
@@ -63,20 +64,22 @@
             </div>
         </div>
     </div>
-    <div class="bio" id='bio'>
+    <!-- <div class="bio" id='bio'>
         Hello, my name is kevin Lin, I was immigrated to the United States from FuJian China when I was 18 year old. I
         am fast learning, intriguing and clever individual. After I dropped out of college around end of year 2012, I
         worked mostly restaurant related jobs, such as host, server, manager etc. sincere Jan 2018, I have found
         interest in learning web development. Hopefully I am able to achieve career transition sucessfully in my 30s.
-    </div>
-    <div id="projects" class="projects"></div>
-    <div id="contact" class="contact"></div>
+    </div> -->
+    <!-- <div id="projects" class="projects"></div>
+    <div id="contact" class="contact"></div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script>
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings'
-        });
+    <script type='text/javascript'>
+        function menuToggle() {
+            var nav = document.getElementById('menu-overlay');
+            nav.classList.toggle('active');
+            var nav = document.getElementById('toggleIcon');
+            nav.classList.toggle('active');
+        }
     </script>
 </body>
 
