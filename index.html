@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <div class="container">
-        <div class="left">
-            <div id="toggleIcon" onclick='menuToggle()'></div>
-            <h2>
-                <span>K</span>
-                <span>e</span>
-                <span>v</span>
-                <span>i</span>
-                <span>n&nbsp&nbsp</span>
-                <span>l</span>
-                <span>i</span>
-                <span>n</span>
-            </h2>
-            <div class="loader">
-                <span class="l">A&nbsp&nbsp</span>
-                <span class="l">W</span>
-                <span class="l">e</span>
-                <span class="l">b&nbsp&nbsp</span>
-                <span class="l">D</span>
-                <span class="l">e</span>
-                <span class="l">v</span>
-                <span class="l">e</span>
-                <span class="l">l</span>
-                <span class="l">o</span>
-                <span class="l">p</span>
-                <span class="l">e</span>
-                <span class="l">r</span>
-            </div>
+      <div class="left">
+        <div id="toggleIcon" onclick="menuToggle()"></div>
+        <h2>
+          <span>K</span>
+          <span>e</span>
+          <span>v</span>
+          <span>i</span>
+          <span>n&nbsp&nbsp</span>
+          <span>l</span>
+          <span>i</span>
+          <span>n</span>
+        </h2>
+        <div class="loader">
+          <span class="l">A&nbsp&nbsp</span>
+          <span class="l">W</span>
+          <span class="l">e</span>
+          <span class="l">b&nbsp&nbsp</span>
+          <span class="l">D</span>
+          <span class="l">e</span>
+          <span class="l">v</span>
+          <span class="l">e</span>
+          <span class="l">l</span>
+          <span class="l">o</span>
+          <span class="l">p</span>
+          <span class="l">e</span>
+          <span class="l">r</span>
         </div>
-        <div class='right'>
-            <div class="navbar" id='menu-overlay'>
-                <ul>
-                    <li> <a href='#' data-text='Home'>Home</a></li>
-                    <li> <a href='#bio' data-text='About'>About</a></li>
-                    <!-- <li> <a href='#' data-text='Services'>Services</a></li> -->
-                    <li> <a href='#' data-text='Projects'>Projects</a></li>
-                    <!-- <li> <a href='#' data-text='Our Team'>Our Team</a></li> -->
-                    <li><a href='#' data-text='Contact'>Contact</a></li>
+      </div>
 
-                </ul>
-            </div>
-            <div class="social">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/kevin-lin-677306177/"><i class="fa fa-linkedin"
-                                aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/devonlin"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://codepen.io/devonlin"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+      <div class="right">
+        <div class="navbar" id="menu-overlay">
+          <ul>
+            <li><a href="home.html" data-text="Home">Home</a></li>
+            <li><a href="about.html" data-text="About">About</a></li>
+            <!-- <li> <a href='#' data-text='Services'>Services</a></li> -->
+            <li><a href="projects.html" data-text="Projects">Projects</a></li>
+            <!-- <li> <a href='#' data-text='Our Team'>Our Team</a></li> -->
+            <li><a href="contact.html" data-text="Contact">Contact</a></li>
+          </ul>
         </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/kevin-lin-677306177/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/devonlin"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/devonlin"
+                ><i class="fa fa-codepen" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- <div class="bio" id='bio'>
-        Hello, my name is kevin Lin, I was immigrated to the United States from FuJian China when I was 18 year old. I
-        am fast learning, intriguing and clever individual. After I dropped out of college around end of year 2012, I
-        worked mostly restaurant related jobs, such as host, server, manager etc. sincere Jan 2018, I have found
-        interest in learning web development. Hopefully I am able to achieve career transition sucessfully in my 30s.
-    </div> -->
-    <!-- <div id="projects" class="projects"></div>
-    <div id="contact" class="contact"></div> -->
 
-    <script type='text/javascript'>
-        function menuToggle() {
-            var nav = document.getElementById('menu-overlay');
-            nav.classList.toggle('active');
-            var nav = document.getElementById('toggleIcon');
-            nav.classList.toggle('active');
-        }
+    <script type="text/javascript">
+      function menuToggle() {
+        var nav = document.getElementById("menu-overlay");
+        nav.classList.toggle("active");
+        var nav = document.getElementById("toggleIcon");
+        nav.classList.toggle("active");
+      }
     </script>
-</body>
-
+  </body>
 </html>
