@@ -49,13 +49,26 @@ body {
 }
 
 h2 {
+  position: relative;
+  left: -100%;
   font-size: 3.3rem;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   text-align: center;
   display: flex;
   font-style: italic;
-  /* border: 1px solid black; */
+  animation: leftsidebar;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes leftsidebar {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 h2 span {
@@ -116,7 +129,21 @@ h2 span:nth-child(10n + 10) {
 /*.navbar {*/
 /*[> border: 1px solid black; <]*/
 /*}*/
-
+.loader {
+  position: relative;
+  left: -100%;
+  animation: leftsidebar0;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes leftsidebar0 {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 0;
+  }
+}
 .l {
   /* font-family: arial; */
   /* color: rgba(255, 255, 255, .3); */
@@ -209,6 +236,11 @@ h2 span:nth-child(10n + 10) {
   align-items: center;
 }
 
+nav .anime {
+  position: relative;
+  top: 0;
+  transition: 2s;
+}
 .navbar li {
   /*margin: 0.5rem;*/
   /*padding: 0.5rem;*/
@@ -219,13 +251,25 @@ h2 span:nth-child(10n + 10) {
 
 .navbar a {
   position: relative;
+  right: -150%;
   display: block;
   padding-right: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 750;
   color: rgba(255, 255, 255, 0.5);
+  animation: rightsidebar;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes rightsidebar {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .navbar a:before {
@@ -235,6 +279,7 @@ h2 span:nth-child(10n + 10) {
   left: 0;
   background: url(wave.png);
   -webkit-background-clip: text;
+  background-clip: text;
   background-repeat: repeat-x;
   animation: animate 2s linear infinite;
   transition: 0.5s;
@@ -260,23 +305,38 @@ h2 span:nth-child(10n + 10) {
 .social ul {
   /*margin: 0;*/
   /*padding: 0;*/
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .social ul li {
+  position: relative;
   list-style: none;
   margin: 0.2rem 0.2rem;
+  right: -150%;
+  animation: rightsocial;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes rightsocial {
+  0% {
+    right: -150%;
+    transform: rotate(0deg);
+  }
+  100% {
+    right: 0;
+    transform: rotate(-360deg);
+  }
 }
 
 .social ul li a {
   position: relative;
   display: block;
   text-align: center;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3rem;
+  height: 3rem;
   line-height: 2.75rem;
   /* background: #333; */
   border-radius: 50%;

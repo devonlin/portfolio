@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonlin/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "devon lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devonlin/portfolio/issues"
+  },
+  "homepage": "https://github.com/devonlin/portfolio#readme"
+}
