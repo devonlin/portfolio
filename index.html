@@ -14,79 +14,81 @@
     <title>Portfolio</title>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="left">
-        <div id="toggleIcon" onclick="menuToggle()"></div>
-        <h2>
-          <span>K</span>
-          <span>e</span>
-          <span>v</span>
-          <span>i</span>
-          <span>n&nbsp&nbsp</span>
-          <span>l</span>
-          <span>i</span>
-          <span>n</span>
-        </h2>
-        <div class="loader">
-          <span class="l">A&nbsp&nbsp</span>
-          <span class="l">W</span>
-          <span class="l">e</span>
-          <span class="l">b&nbsp&nbsp</span>
-          <span class="l">D</span>
-          <span class="l">e</span>
-          <span class="l">v</span>
-          <span class="l">e</span>
-          <span class="l">l</span>
-          <span class="l">o</span>
-          <span class="l">p</span>
-          <span class="l">e</span>
-          <span class="l">r</span>
+  <body data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="home">
+      <div class="container">
+        <div class="left">
+          <div id="toggleIcon" onclick="menuToggle()"></div>
+          <h2>
+            <span>K</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>n&nbsp&nbsp</span>
+            <span>l</span>
+            <span>i</span>
+            <span>n</span>
+          </h2>
+          <div class="loader">
+            <span class="l">A&nbsp&nbsp</span>
+            <span class="l">W</span>
+            <span class="l">e</span>
+            <span class="l">b&nbsp&nbsp</span>
+            <span class="l">D</span>
+            <span class="l">e</span>
+            <span class="l">v</span>
+            <span class="l">e</span>
+            <span class="l">l</span>
+            <span class="l">o</span>
+            <span class="l">p</span>
+            <span class="l">e</span>
+            <span class="l">r</span>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="navbar" id="menu-overlay">
+            <ul>
+              <li><a href="index.html" data-text="Home">Home</a></li>
+              <li><a href="about.html" data-text="About">About</a></li>
+              <!-- <li> <a href='#' data-text='Services'>Services</a></li> -->
+              <li><a href="projects.html" data-text="Projects">Projects</a></li>
+              <!-- <li> <a href='#' data-text='Our Team'>Our Team</a></li> -->
+              <li><a href="contact.html" data-text="Contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/kevin-lin-677306177/"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/devonlin"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://codepen.io/devonlin"
+                  ><i class="fa fa-codepen" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="right">
-        <div class="navbar" id="menu-overlay">
-          <ul>
-            <li><a href="home.html" data-text="Home">Home</a></li>
-            <li><a href="about.html" data-text="About">About</a></li>
-            <!-- <li> <a href='#' data-text='Services'>Services</a></li> -->
-            <li><a href="projects.html" data-text="Projects">Projects</a></li>
-            <!-- <li> <a href='#' data-text='Our Team'>Our Team</a></li> -->
-            <li><a href="contact.html" data-text="Contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="social">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/kevin-lin-677306177/"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/devonlin"
-                ><i class="fa fa-github" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://codepen.io/devonlin"
-                ><i class="fa fa-codepen" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-      function menuToggle() {
-        var nav = document.getElementById("menu-overlay");
-        nav.classList.toggle("active");
-        var nav = document.getElementById("toggleIcon");
-        nav.classList.toggle("active");
-      }
-    </script>
-    <script src="http://127.0.0.1:9001/js/socket.js"></script>
-    <script src="script.js"></script>
+      <script type="text/javascript">
+        function menuToggle() {
+          var nav = document.getElementById("menu-overlay");
+          nav.classList.toggle("active");
+          var nav = document.getElementById("toggleIcon");
+          nav.classList.toggle("active");
+        }
+      </script>
+      <script src="http://127.0.0.1:9001/js/socket.js"></script>
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>
