@@ -17,7 +17,7 @@ body {
 }
 
 .contact {
-  font-size: 0.7rem;
+  font-size: 1.1rem;
 }
 .headbar {
   background: #96cb48;
@@ -34,5 +34,5 @@ div.a {
 }
 p,
 li {
-  font-size: 12px;
+  font-size: 1.1rem;
 }
