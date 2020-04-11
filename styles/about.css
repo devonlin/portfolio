@@ -21,8 +21,8 @@ body {
 .card {
   position: relative;
   margin: 20px 0;
-  width: 300px;
-  height: 400px;
+  width: 19rem;
+  height: 25.2rem;
   background: #fff;
   transform-style: preserve-3d;
   transform: perspective(2000px);
@@ -34,11 +34,25 @@ body {
   transform: perspective(2000px) rotate(-10deg);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 }
+.card:hover .cover {
+  display: none;
+}
+.card .cover {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .card .imgBox {
   position: relative;
+  background: #333;
   color: #fff;
-  width: 300px;
-  height: 400px;
+  width: 18.7rem;
+  height: 24.8rem;
   border: 1px solid #000;
   box-sizing: border-box;
   transform-origin: left;
@@ -62,19 +76,16 @@ body {
   left: 0;
   box-sizing: border-box;
   padding: 20px;
+  margin: 1rem;
 }
 .container {
   position: relative;
-  width: 30rem;
-}
-.container h2 {
-  color: #fff;
+  width: 40rem;
 }
 .container .skills {
   position: relative;
   display: flex;
-  margin: 20px 0;
-  padding: 24px 10px 18px;
+  padding: 1.2rem 10px 18px;
   background: linear-gradient(#616161 0%, #333 10%, #222);
   border-radius: 8px;
   overflow: hidden;
