@@ -23,24 +23,24 @@ body {
 .contact-method {
   width: 14rem;
   height: 9rem;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   display: inline-block;
   background: #383838;
-  margin: 50px 20px;
-  padding: 30px;
+  margin: 3.1rem 1.25rem;
+  padding: 1.8rem;
   color: #80d7ff;
   position: relative;
   cursor: pointer;
 }
 contact-method fa-3x {
-  margin-top: 50px;
+  margin-top: 3.1rem;
 }
 .contact-method span {
   position: absolute;
   width: 100%;
-  height: 40px;
+  height: 2.5rem;
   left: 0;
-  bottom: -40px;
+  bottom: -2.5rem;
   opacity: 0;
   font-size: 1.5rem;
   transition: 1s;
@@ -54,12 +54,12 @@ contact-method fa-3x {
 }
 .contact-form {
   width: 80%;
-  padding: 20px;
+  padding: 1.25rem;
 }
 .contact-form h2 {
   width: 100%;
   color: #80d7ff;
-  font-size: 36px;
+  font-size: 2.25rem;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -166,8 +166,8 @@ ul {
 }
 ul li {
   list-style: none;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background: #262626;
   margin: 0 0.6rem;
   border-radius: 50%;

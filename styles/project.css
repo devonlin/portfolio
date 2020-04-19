@@ -1,6 +1,6 @@
 body {
   background: #383838;
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -11,44 +11,44 @@ body {
 }
 .swiper-container {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.1rem;
+  padding-bottom: 3.1rem;
 }
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 450px;
+  width: 25rem;
+  height: 28rem;
   background: #fff;
 }
 .card {
   position: relative;
   background: #262626;
-  width: 400px;
-  height: 450px;
+  width: 25rem;
+  height: 28rem;
   margin: 0 auto;
 }
 .card .content {
   background: #fff;
   color: #000;
-  width: 400px;
-  height: 250px;
-  padding: 30px;
+  width: 25rem;
+  height: 15.8rem;
+  padding: 1.8rem;
   box-sizing: border-box;
 }
 .card .content a {
   display: inline-block;
-  margin: 10px 0 0;
-  padding: 10px 20px;
+  margin: 0.625rem 0 0;
+  padding: 0.625rem 1.25rem;
   text-decoration: none;
-  border: 2px solid #262626;
+  border: 0.125rem solid #262626;
   color: #262626;
   font-weight: 600;
 }
 .card .sliderText {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,14 +62,14 @@ body {
 ul {
   /*{{{*/
   position: fixed;
-  bottom: 2px;
-  right: 2px;
+  bottom: 0.125rem;
+  right: 0.125rem;
   z-index: 999;
 }
 ul li {
   list-style: none;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background: #262626;
   margin: 0 0.6rem;
   border-radius: 50%;
@@ -98,8 +98,8 @@ ul li.prev:hover span {
 ul li.prev span:before {
   content: "";
   position: absolute;
-  width: 38px;
-  height: 4px;
+  width: 2.3rem;
+  height: 0.25rem;
   background: #fff;
   transform-origin: left;
   transform: rotate(45deg) translate(-2px, -1px) scaleX(0);

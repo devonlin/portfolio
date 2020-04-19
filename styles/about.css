@@ -13,7 +13,7 @@ body {
 }
 .container0 {
   max-width: 62rem;
-  margin: 6rem auto;
+  margin: 3rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -22,11 +22,11 @@ body {
   position: relative;
   margin: 20px 0;
   width: 19rem;
-  height: 25.2rem;
+  height: 25.5rem;
   background: #fff;
   transform-style: preserve-3d;
   transform: perspective(2000px);
-  transition: 1s;
+  transition: 2s;
   box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
 }
 .card:hover {
@@ -34,23 +34,23 @@ body {
   transform: perspective(2000px) rotate(-10deg);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 }
-.card:hover .cover {
-  display: none;
-}
 .card .cover {
   position: absolute;
   color: #fff;
-  font-weight: 700;
-  font-size: 50px;
-  z-index: 999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform-origin: left;
+  transition: 1s;
+  box-sizing: border-box;
 }
 .card .imgBox {
   position: relative;
   background: #333;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.1rem;
   width: 18.7rem;
   height: 24.8rem;
   border: 1px solid #000;
@@ -58,6 +58,9 @@ body {
   transform-origin: left;
   z-index: 1;
   transition: 1s;
+}
+.card .imgBox p {
+  padding: 3rem;
 }
 .card:hover .imgBox {
   transform: rotateY(-135deg);
@@ -80,16 +83,16 @@ body {
 }
 .container {
   position: relative;
-  width: 40rem;
+  width: 35rem;
 }
 .container .skills {
   position: relative;
   display: flex;
-  padding: 1.2rem 10px 18px;
+  padding: 1.2rem 0.6rem 1rem;
   background: linear-gradient(#616161 0%, #333 10%, #222);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
-  border: 2px solid #000;
+  border: 0.12rem solid #000;
   transition: 0.5s;
 }
 .container .skills:before {
@@ -104,7 +107,7 @@ body {
 }
 .container .skills .Name {
   position: relative;
-  width: 110px;
+  width: 6.7rem;
   text-align: right;
   color: #fff;
   margin-top: -2px;
@@ -112,20 +115,20 @@ body {
 }
 .container .skills .value {
   position: relative;
-  width: 40px;
+  width: 2.5rem;
   text-align: left;
   color: #fff;
-  margin-top: -2px;
+  margin-top: -0.12rem;
   text-transform: uppercase;
 }
 .container .skills .percent {
   position: relative;
   width: 100%;
-  height: 20px;
-  margin: 0 10px;
-  border-radius: 10px;
+  height: 1.25rem;
+  margin: 0 0.625rem;
+  border-radius: 0.625rem;
   background: #151515;
-  box-shadow: inset 0 0 10px #000;
+  box-shadow: inset 0 0 0.625rem #000;
   overflow: hidden;
 }
 .container .skills .percent .progress {
@@ -134,9 +137,9 @@ body {
   left: 0;
   width: 70%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   background: #fff;
-  box-shadow: inset 0 0 2px #000;
+  box-shadow: inset 0 0 0.125rem #000;
   animation: animate 4s ease-in-out forwards;
 }
 @keyframes animate {
@@ -158,14 +161,14 @@ body {
 }
 ul {
   position: fixed;
-  bottom: 2px;
-  right: 2px;
+  bottom: 0.12rem;
+  right: 0.12rem;
   z-index: 999;
 }
 ul li {
   list-style: none;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background: #262626;
   margin: 0 0.6rem;
   border-radius: 50%;
@@ -178,7 +181,7 @@ ul li span {
   position: absolute;
   width: 1.29rem;
   height: 1.29rem;
-  border: 4px solid #fff;
+  border: 0.25rem solid #fff;
   transition: 0.5s;
 }
 ul li.prev span {
@@ -194,8 +197,8 @@ ul li.prev:hover span {
 ul li.prev span:before {
   content: "";
   position: absolute;
-  width: 38px;
-  height: 4px;
+  width: 2.5rem;
+  height: 0.25rem;
   background: #fff;
   transform-origin: left;
   transform: rotate(45deg) translate(-2px, -1px) scaleX(0);
