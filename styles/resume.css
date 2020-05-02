@@ -42,3 +42,21 @@ a.footer {
   right: 1.5rem;
   font-size: 1.5rem;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .box {
+  position: relative;
+  width: 17rem;
+  height: 14rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+.box a:link {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.1rem;
+}
