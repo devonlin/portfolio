@@ -15,46 +15,33 @@
           <h2>biography</h2>
           <p>
             I immigrated to the United States from China when I was 18 year old.
-            After I dropped out of college at the end of year 2012, I worked
-            mostly restaurant related jobs, such as server, delivery driver etc
-            until late year of 2018, I am aware of technologies, it's invading
-            our lives and become essentials. smart phones, computers, laptops
-            are everywhere. Hence, I believe IT is the future, therefore I
-            picked web development to get into the field. Since then I self
-            study web development intermittently till now.
+            After I dropped out of college at the end of year 2012, I work as
+            delivery driver in a small chinese restaurant till late year of
+            2018. and then I found web development online, there are plenty free
+            resources online teach you how to programming. I like it and have
+            interest in programming. Since then I self study web development
+            intermittently till now.
           </p>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="skills">
-        <span class="Name">html</span>
-        <div class="percent">
-          <div class="progress" style="width: 95%;"></div>
-        </div>
-        <span class="value">95%</span>
+      <div class="box">
+        <div class="chart" data-percent="95">95%</div>
+        <h2>Html</h2>
       </div>
-      <div class="skills">
-        <span class="Name">css</span>
-        <div class="percent">
-          <div class="progress" style="width: 90%;"></div>
-        </div>
-        <span class="value">90%</span>
+      <div class="box">
+        <div class="chart" data-percent="90">90%</div>
+        <h2>Css</h2>
       </div>
-      <div class="skills">
-        <span class="Name">javascript</span>
-        <div class="percent">
-          <div class="progress" style="width: 65%;"></div>
-        </div>
-        <span class="value">65%</span>
+      <div class="box">
+        <div class="chart" data-percent="75">75%</div>
+        <h2>Javascript</h2>
       </div>
-      <div class="skills">
-        <span class="Name">nodejs</span>
-        <div class="percent">
-          <div class="progress" style="width: 50%;"></div>
-        </div>
-        <span class="value">50%</span>
+      <div class="box">
+        <div class="chart" data-percent="60">60%</div>
+        <h2>Nodejs</h2>
       </div>
     </div>
     <ul>
@@ -62,5 +49,20 @@
         ><li class="prev"><span></span></li
       ></a>
     </ul>
+    <script src="../easypiechart.min.js"></script>
+    <script>
+      var elements = document.querySelectorAll(".chart");
+      elements.forEach(
+        (element) =>
+          new EasyPieChart(element, {
+            // your options goes here
+            size: 180,
+            barColor: "#02dd40",
+            scaleColor: false,
+            lineWidth: 15,
+            trackColor: "#373737",
+          })
+      );
+    </script>
   </body>
 </html>
