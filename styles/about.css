@@ -82,7 +82,7 @@ body {
   padding: 20px;
   margin: 1rem;
 }
-@keyframes animate {
+/*@keyframes animate {
   from {
     width: 0;
   }
@@ -98,13 +98,17 @@ body {
 }
 .container .skills:nth-child(4) .percent .progress {
   background: linear-gradient(45deg, #22ffde, #2196f3);
-}
+}*/
 .container {
-  width: 62rem;
+  width: 50rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .container .box {
   width: 25%;
-  float: left;
 }
 .container .box h2 {
   text-align: center;
