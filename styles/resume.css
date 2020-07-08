@@ -6,6 +6,20 @@ body {
   /*background: rgba(70, 70, 70, 0.9);*/
   /*color: rgba(255, 255, 255, 0.5);*/
 }
+html {
+  animation: transitionIn 1.75s;
+  left: 0;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .title {
   display: flex;
   flex-direction: column;

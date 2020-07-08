@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  animation: transitionIn 1.75s;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -100,7 +113,7 @@ body {
   background: linear-gradient(45deg, #22ffde, #2196f3);
 }*/
 .container {
-  width: 50rem;
+  width: 25rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -108,7 +121,7 @@ body {
   flex-wrap: wrap;
 }
 .container .box {
-  width: 25%;
+  width: 50%;
 }
 .container .box h2 {
   text-align: center;

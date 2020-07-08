@@ -9,6 +9,17 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+html {
+  animation: transitionIn 1.75s;
+}
+@keyframes transitionIn {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .swiper-container {
   width: 100%;
   padding-top: 3.1rem;
