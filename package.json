@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/devonlin/portfolio#readme",
   "dependencies": {
-    "@barba/core": "^2.9.7"
+    "@barba/core": "^2.9.7",
+    "counterup2": "^1.0.4"
   },
   "devDependencies": {}
 }

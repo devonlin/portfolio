@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/styles/style.css" />
-    <title>Portfolio</title>
+    <title>Kevin Lin</title>
   </head>
 
   <body data-barba="wrapper">
@@ -83,10 +83,12 @@
             </ul>
           </div>
         </div>
+        <footer><div class="counter" data-target="0">0</div></footer>
       </div>
       <div id="background-0">
         <div class="bubble x1"></div>
         <div class="bubble x2"></div>
+
         <div class="bubble x3"></div>
         <div class="bubble x4"></div>
         <div class="bubble x5"></div>
@@ -96,6 +98,7 @@
         <div class="bubble x9"></div>
         <div class="bubble x10"></div>
       </div>
+      <script src="./script.js"></script>
       <script type="text/javascript">
         function menuToggle() {
           var nav = document.getElementById("menu-overlay");
@@ -103,9 +106,30 @@
           var nav = document.getElementById("toggleIcon");
           nav.classList.toggle("active");
         }
+        const counter = document.querySelector(".counter");
+        console.log(counter);
+        const speed = 200;
+
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const inc = target / speed;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 10);
+          } else {
+            count.innerText = target;
+          }
+        };
+        updateCount();
+        function cb(response) {
+          counter.innerText = response.value;
+        }
       </script>
-      <script src="http://127.0.0.1:9001/js/socket.js"></script>
-      <script src="script.js"></script>
+      <script
+        async
+        src="https://api.countapi.xyz/hit/devonlin101.netlify.com/counter?callback=cb"
+      ></script>
     </main>
   </body>
 </html>

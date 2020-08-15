@@ -136,6 +136,9 @@ contact-method fa-3x {
   border-radius: 2px;
   pointer-events: none;
 }
+.inputBox input:invalid .line {
+  border: solid red 1px;
+}
 
 .contact-form .row100 .inputBox input:focus ~ .line,
 .contact-form .row100 .inputBox input:valid ~ .line {
@@ -181,13 +184,9 @@ ul li {
   list-style: none;
   width: 4rem;
   height: 4rem;
-  background: #262626;
   margin: 0 0.6rem;
   border-radius: 50%;
   transition: 0.5s;
-}
-ul li:hover {
-  background: #0070ff;
 }
 ul li span {
   position: absolute;

@@ -50,3 +50,4 @@ barba.init({
     afterEnter() {}
   }]
 });
+

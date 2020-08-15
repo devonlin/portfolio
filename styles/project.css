@@ -98,13 +98,9 @@ ul li {
   list-style: none;
   width: 4rem;
   height: 4rem;
-  background: #262626;
   margin: 0 0.6rem;
   border-radius: 50%;
   transition: 0.5s;
-}
-ul li:hover {
-  background: #0070ff;
 }
 ul li span {
   position: absolute;

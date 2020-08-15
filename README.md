@@ -8,4 +8,4 @@ add more projects;
 add github link to project page;
 add preview link to project page;
 collect information from contact page;
-add page transition effect;
+improve skill bars ui;(pie chart suggestion)
