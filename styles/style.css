@@ -7,20 +7,6 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-html{
-  animation: transitionIn 1.75s;
-  left: 0;
-}
-@keyframes transitionIn {
-  from{
-    opacity: 0;
-    transform: rotate(10deg);
-  }
-  to{
-    opacity: 1;
-    transform: rotate(360deg);
-  }
-}
 
 body {
   background: url("/images/2819060-dark-gray-code-3d-depth-of-field-html-code___mixed-wallpapers.jpg");
