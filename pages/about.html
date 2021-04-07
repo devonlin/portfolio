@@ -26,43 +26,18 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="box">
-        <div class="chart" data-percent="95">95%</div>
-        <h2>Html</h2>
-      </div>
-      <div class="box">
-        <div class="chart" data-percent="90">90%</div>
-        <h2>Css</h2>
-      </div>
-      <div class="box">
-        <div class="chart" data-percent="75">75%</div>
-        <h2>Javascript</h2>
-      </div>
-      <div class="box">
-        <div class="chart" data-percent="60">60%</div>
-        <h2>Nodejs</h2>
-      </div>
-    </div>
+    <label for="html">HTML</label>
+    <progress id="html" value="95" max="100">95%</progress>
+    <label for="css">CSS</label>
+    <progress id="css" value="95" max="100">95%</progress>
+    <label for="javascript">JAVASCRIPT</label>
+    <progress id="javascript" value="85" max="100">85%</progress>
+    <label for="nodejs">NODEJS</label>
+    <progress id="nodejs" value="70" max="100">70%</progress>
     <ul>
       <a href="../index.html"
         ><li class="prev"><span></span></li
       ></a>
     </ul>
-    <script src="../easypiechart.min.js"></script>
-    <script>
-      var elements = document.querySelectorAll(".chart");
-      elements.forEach(
-        (element) =>
-          new EasyPieChart(element, {
-            // your options goes here
-            size: 180,
-            barColor: "#02dd40",
-            scaleColor: false,
-            lineWidth: 15,
-            trackColor: "#373737",
-          })
-      );
-    </script>
   </body>
 </html>

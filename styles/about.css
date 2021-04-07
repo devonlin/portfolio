@@ -32,6 +32,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+label {
+  color: #fff;
+}
 .card {
   position: relative;
   margin: 20px 0;

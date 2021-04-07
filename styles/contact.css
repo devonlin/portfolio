@@ -41,7 +41,7 @@ body {
   display: inline-block;
   margin: 3.1rem 1.25rem;
   padding: 1.8rem;
-  color: #80d7ff;
+  color: #a1a1a1;
   position: relative;
   cursor: pointer;
 }
@@ -71,7 +71,7 @@ contact-method fa-3x {
 }
 .contact-form h2 {
   width: 100%;
-  color: #80d7ff;
+  color: #a1a1a1;
   font-size: 2.25rem;
   text-align: center;
   margin-bottom: 10px;
@@ -93,7 +93,7 @@ contact-method fa-3x {
   position: relative;
   width: 100%;
   height: 40px;
-  color: #80d7ff;
+  color: #a1a1a1;
 }
 .contact-form .row100 .inputBox input,
 .contact-form .row100 .inputBox.textarea textarea {
@@ -131,7 +131,7 @@ contact-method fa-3x {
   display: block;
   width: 100%;
   height: 2px;
-  background: #80d7ff;
+  background: #a1a1a1;
   transition: 0.5s;
   border-radius: 2px;
   pointer-events: none;
@@ -169,7 +169,7 @@ input[type="submit"] {
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
-  background: #80d7ff;
+  background: #a1a1a1;
   color: #000;
   font-size: 18px;
   border-radius: 2px;
