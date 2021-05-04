@@ -23,8 +23,6 @@ updateCount();
 function cb(response) {
   counter.innerText = response.value;
 }
-<<<<<<< HEAD
-=======
 
 function showTime() {
   var date = new Date();
@@ -50,4 +48,3 @@ function showTime() {
   document.querySelector(".clock").innerHTML = time;
   setTimeout(showTime, 1000);
 }
->>>>>>> fdcb6ca2aedae920043228eb6b4b557045f39f2f
