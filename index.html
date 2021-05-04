@@ -1,104 +1,139 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-<meta charset='UTF-8'>
-<meta content='width=device-width, initial-scale=1.0' name='viewport'>
-<meta content='ie=edge' http-equiv='X-UA-Compatible'>
-<link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' rel='stylesheet'>
-<link href='styles/style.css' rel='stylesheet'>
-<title>Kevin Lin</title>
-</head>
-<body data-barba='wrapper'>
-<main data-barba-namespace='home' data-barba='container'>
-<div class='container'>
-<div class='left'>
-<div id='toggleIcon' onclick='menuToggle()'></div>
-<h2>
-<span>K</span>
-<span>e</span>
-<span>v</span>
-<span>i</span>
-<span>n&nbsp&nbsp</span>
-<span>l</span>
-<span>i</span>
-<span>n</span>
-</h2>
-<div class='loader'>
-<span class='l'>A&nbsp&nbsp</span>
-<span class='l'>W</span>
-<span class='l'>e</span>
-<span class='l'>b&nbsp&nbsp</span>
-<span class='l'>D</span>
-<span class='l'>e</span>
-<span class='l'>v</span>
-<span class='l'>e</span>
-<span class='l'>l</span>
-<span class='l'>o</span>
-<span class='l'>p</span>
-<span class='l'>e</span>
-<span class='l'>r</span>
-</div>
-</div>
-<div class='right'>
-<div class='navbar' id='menu-overlay'>
-<ul>
-<li>
-<a data-text='resume' href='pages/resume.html'>resume</a>
-</li>
-<li>
-<a data-text='About' href='pages/about.html'>About</a>
-</li>
-<li>
-<a data-text='Projects' href='pages/project.html'>Projects</a>
-</li>
-<li>
-<a data-text='Contact' href='pages/contact.html'>Contact</a>
-</li>
-</ul>
-</div>
-<div class='social'>
-<ul>
-<li>
-<a href='https://my.indeed.com/p/kevinl-gdyuyaa'>
-<span class='iconify' data-icon='cib:indeed' data-inline='false'></span>
-</a>
-</li>
-<li>
-<a href='https://leetcode.com/devonlin101'>
-<span class='iconify' data-icon='simple-icons:leetcode' data-inline='false'></span>
-</a>
-</li>
-<li>
-<a href='https://github.com/devonlin'>
-<span class='iconify' data-icon='ant-design:github-filled' data-inline='false'></span>
-</a>
-</li>
-<li>
-<a href='https://codepen.io/devonlin'>
-<span class='iconify' data-icon='akar-icons:codepen-fill' data-inline='false'></span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-<footer>
-<small>all copyright reserved @dl101 llc</small>
-</footer>
-</div>
-<div id='background-0'>
-<div class='bubble x1'></div>
-<div class='bubble x2'></div>
-<div class='bubble x3'></div>
-<div class='bubble x4'></div>
-<div class='bubble x5'></div>
-<div class='bubble x6'></div>
-<div class='bubble x7'></div>
-<div class='bubble x8'></div>
-<div class='bubble x9'></div>
-<div class='bubble x10'></div>
-</div>
-</main>
-<script src='script.js'></script>
-<script src='https://code.iconify.design/1/1.0.7/iconify.min.js'></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-49F7XD7HMG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-49F7XD7HMG");
+    </script>
+    <title>Kevin Lin</title>
+  </head>
+  <body data-barba="wrapper">
+    <main data-barba-namespace="home" data-barba="container">
+      <div class="container">
+        <div class="left">
+          <div id="toggleIcon" onclick="menuToggle()"></div>
+          <h2>
+            <span>K</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>n&nbsp&nbsp</span>
+            <span>l</span>
+            <span>i</span>
+            <span>n</span>
+          </h2>
+          <div class="loader">
+            <span class="l">A&nbsp&nbsp</span>
+            <span class="l">W</span>
+            <span class="l">e</span>
+            <span class="l">b&nbsp&nbsp</span>
+            <span class="l">D</span>
+            <span class="l">e</span>
+            <span class="l">v</span>
+            <span class="l">e</span>
+            <span class="l">l</span>
+            <span class="l">o</span>
+            <span class="l">p</span>
+            <span class="l">e</span>
+            <span class="l">r</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="navbar" id="menu-overlay">
+            <ul>
+              <li>
+                <a data-text="resume" href="pages/resume.html">resume</a>
+              </li>
+              <li>
+                <a data-text="About" href="pages/about.html">About</a>
+              </li>
+              <li>
+                <a data-text="Projects" href="pages/project.html">Projects</a>
+              </li>
+              <li>
+                <a data-text="Contact" href="pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://my.indeed.com/p/kevinl-gdyuyaa">
+                  <span
+                    class="iconify"
+                    data-icon="cib:indeed"
+                    data-inline="false"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://leetcode.com/devonlin101">
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:leetcode"
+                    data-inline="false"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/devonlin">
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:github-filled"
+                    data-inline="false"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/devonlin">
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:codepen-fill"
+                    data-inline="false"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <small>all copyright reserved @dl101 llc</small>
+        </footer>
+      </div>
+      <div id="background-0">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
 </html>
