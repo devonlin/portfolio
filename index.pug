@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(content='width=device-width, initial-scale=1.0' name='viewport')
+    meta(content='ie=edge' http-equiv='X-UA-Compatible')
+    link(crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' rel='stylesheet')
+    link(href='styles/style.css' rel='stylesheet')
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-49F7XD7HMG')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+      dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-49F7XD7HMG");
+    title Kevin Lin
+  body(data-barba='wrapper' onload='showTime()')
+      main
+        .container
+          .left
+            #toggleIcon(onclick='menuToggle()')
+            h2
+              span K
+              span e
+              span v
+              span i
+              span n  
+              span l
+              span i
+              span n
+            .loader
+              span.l A  
+              span.l W
+              span.l e
+              span.l b  
+              span.l D
+              span.l e
+              span.l v
+              span.l e
+              span.l l
+              span.l o
+              span.l p
+              span.l e
+              span.l r
+          .right
+            #menu-overlay.navbar
+              ul
+                li
+                  a(data-text='resume' href='pages/resume.html') resume
+                li
+                  a(data-text='About' href='pages/about.html') About
+                li
+                  a(data-text='Projects' href='pages/project.html') Projects
+                li
+                  a(data-text='Contact' href='pages/contact.html') Contact
+            .social
+              ul
+                li
+                  a(href='https://my.indeed.com/p/kevinl-gdyuyaa')
+                    span.iconify(data-icon='cib:indeed' data-inline='false')
+                li
+                  a(href='https://leetcode.com/devonlin101')
+                    span.iconify(data-icon='simple-icons:leetcode' data-inline='false')
+                li
+                  a(href='https://github.com/devonlin')
+                    span.iconify(data-icon='ant-design:github-filled' data-inline='false')
+                li
+                  a(href='https://codepen.io/devonlin')
+                    span.iconify(data-icon='akar-icons:codepen-fill' data-inline='false')
+                li
+                  a(href='https://www.freecodecamp.org/fcc575e91c0-8662-4726-95b4-b52eed24bcc8')
+                    span.iconify(data-icon='cib:freecodecamp' data-inline='false')
+          footer
+            .clock
+            small all ©copyright reserved @dl101 llc
+        #background-0
+          .bubble.x1
+          .bubble.x2
+          .bubble.x3
+          .bubble.x4
+          .bubble.x5
+          .bubble.x6
+          .bubble.x7
+          .bubble.x8
+          .bubble.x9
+          .bubble.x10
+      script(src='script.js')
+      script(src='https://code.iconify.design/1/1.0.7/iconify.min.js')

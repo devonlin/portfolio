@@ -4,25 +4,8 @@ function menuToggle() {
   var nav = document.getElementById("toggleIcon");
   nav.classList.toggle("active");
 }
-const counter = document.querySelector(".counter");
-console.log(counter);
-const speed = 200;
 
-const updateCount = () => {
-  const target = +counter.getAttribute("data-target");
-  const count = +counter.innerText;
-  const inc = target / speed;
-  if (count < target) {
-    counter.innerText = Math.ceil(count + inc);
-    setTimeout(updateCount, 10);
-  } else {
-    count.innerText = target;
-  }
-};
-updateCount();
-function cb(response) {
-  counter.innerText = response.value;
-}
+setInterval(showTime, 1000);
 
 function showTime() {
   var date = new Date();
@@ -44,7 +27,6 @@ function showTime() {
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
-  var time = h + ":" + m + ":" + s + " " + session;
+  let time = h + ":" + m + ":" + s + " " + session;
   document.querySelector(".clock").innerHTML = time;
-  setTimeout(showTime, 1000);
 }
